@@ -1,0 +1,72 @@
+/* StopWatch.css */
+
+body {
+  background: #0f0f1a;
+  font-family: 'Orbitron', sans-serif; /* Consider importing from Google Fonts */
+}
+
+.stopwatch-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #00fff7;
+  background: radial-gradient(circle at center, #12132e, #0f0f1a);
+}
+
+.timer-display {
+  font-size: 5rem;
+  margin-bottom: 30px;
+  color: #00fff7;
+  text-shadow: 0 0 20px #00fff7, 0 0 40px #00fff7;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    text-shadow: 0 0 10px #00fff7;
+  }
+  50% {
+    text-shadow: 0 0 25px #00fff7, 0 0 45px #00fff7;
+  }
+  100% {
+    text-shadow: 0 0 10px #00fff7;
+  }
+}
+
+.button-group {
+  display: flex;
+  gap: 20px;
+}
+
+.neon-button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  color: #00fff7;
+  background: transparent;
+  border: 2px solid #00fff7;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px #00fff7, inset 0 0 10px #00fff7;
+}
+
+.neon-button:hover {
+  background: #00fff7;
+  color: #0f0f1a;
+  box-shadow: 0 0 20px #00fff7, 0 0 40px #00fff7, inset 0 0 10px #0f0f1a;
+}
+
+.neon-button.reset {
+  border-color: #ff4d6d;
+  color: #ff4d6d;
+  box-shadow: 0 0 10px #ff4d6d, inset 0 0 10px #ff4d6d;
+}
+
+.neon-button.reset:hover {
+  background: #ff4d6d;
+  color: #0f0f1a;
+  box-shadow: 0 0 20px #ff4d6d, 0 0 40px #ff4d6d, inset 0 0 10px #0f0f1a;
+}

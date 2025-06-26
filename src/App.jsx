@@ -3,11 +3,13 @@ import "./App.css";
 import Switch from "./components/Switch";
 import AutoCorrect from "./components/AutoCorrect";
 import ProfileCard from "./components/ProfileCard";
+import DailyQuote from "./components/DailyQuote";
+import StopWatch from "./components/StopWatch";
 
 function App() {
   return (
-    <>
-      <Switch />
+    <div style={{padding:"10px"}}>
+      {/* <Switch />
       <AutoCorrect />
       <div style={{display:"flex", gap:10, justifyContent:"space-between"}}>
         <ProfileCard
@@ -21,7 +23,9 @@ function App() {
           bio="Tushar is a passionate Data analyst who enjoys building clean and functional user interfaces."
         />
       </div>
-    </>
+      <DailyQuote /> */}
+      <StopWatch/>
+    </div>
   );
 }
 

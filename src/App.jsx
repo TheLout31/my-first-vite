@@ -6,14 +6,15 @@ import ProfileCard from "./components/ProfileCard";
 import DailyQuote from "./components/DailyQuote";
 import StopWatch from "./components/StopWatch";
 import { UserProvider } from "./context/UserContext";
+ import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
- 
-    <div style={{padding:"10px"}}>
-      
-      <StopWatch/>
-    </div>
+    <Routes>
+      <Route path="/" element={<StopWatch />} />
+      <Route path="/dailyQuote" element={<DailyQuote />} />
+      <Route path="/autoCorrect" element={<AutoCorrect />} />
+    </Routes>
   );
 }
 

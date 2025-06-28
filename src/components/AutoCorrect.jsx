@@ -20,7 +20,7 @@ function AutoCorrect() {
   };
 
   return (
-    <div>
+    <div style={{display:"flex", flex:1, flexDirection:'column',  }}>
       <label htmlFor="myInput">Enter Text:</label>
       <input
         type="text"
